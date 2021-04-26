@@ -2,10 +2,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './sidebar.css';
 import SideBarData from './sidebarData';
+import HideNav from '../Navbar/HideNav';
 
-const Sidebar = () => (
-  <div className="toggle-side-bar sidebar-section page-general-color">
-    {
+const Sidebar = () => {
+  const { hideSideBar } = HideNav();
+  return (
+    <div className={`${hideSideBar} sidebar-section page-general-color`}>
+      {
       SideBarData.map(content => (
         <div
           key={content.id}
@@ -27,7 +30,8 @@ const Sidebar = () => (
         </div>
       ))
     }
-  </div>
-);
+    </div>
+  );
+};
 
 export default Sidebar;
