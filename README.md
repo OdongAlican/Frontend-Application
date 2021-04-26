@@ -13,7 +13,7 @@
 ![Second Image](public/mobiletwo.png)
 
 ## NB: 
-This Task took me approximately six hours to complete
+This Task took me Five hours to complete this task upto this state.
 
 ## Live Version 
 - [Live Link](https://warm-ocean-24948.herokuapp.com/)
