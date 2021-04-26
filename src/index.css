@@ -3,3 +3,17 @@
   padding: 0;
   margin: 0;
 }
+
+.page-general-color {
+  background-color: #133280;
+}
+
+.toggle-side-bar {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 10px;
+  align-items: center;
+  cursor: pointer;
+  display: block;
+  padding-top: 5px;
+}
