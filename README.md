@@ -12,6 +12,9 @@
 ![First Image](public/mobileone.png)
 ![Second Image](public/mobiletwo.png)
 
+## NB: 
+This Task took me approximately six hours to complete
+
 
 ## Instructions
 Please stick to the following instructions on how to submit your application:
