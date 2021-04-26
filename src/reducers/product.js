@@ -1,5 +1,7 @@
 import {
   FETCH_PRODUCT_SUCCESS,
+  FETCH_PRODUCT_FAILURE,
+  FETCH_PRODUCT_LOADING,
 } from '../actions/product';
 
 const initialState = {
@@ -16,6 +18,20 @@ const productReducer = (state = initialState, action) => {
         product: action.payload,
         error: '',
         loading: false,
+      };
+    case FETCH_PRODUCT_FAILURE:
+      return {
+        ...state,
+        product: {},
+        error: action.payload,
+        loading: false,
+      };
+    case FETCH_PRODUCT_LOADING:
+      return {
+        ...state,
+        product: {},
+        error: '',
+        loading: true,
       };
     default:
       return state;
