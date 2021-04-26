@@ -11,6 +11,7 @@ import Description from '../Pages/Description';
 import Attribute from '../Pages/Attribute';
 import User from '../User/User';
 import Map from '../Map/Map';
+import Spinner from '../Spinner/Spinner';
 
 const Product = () => {
   const { id } = useParams();
@@ -22,7 +23,9 @@ const Product = () => {
     dispatch(fetchProduct(id));
   }, []);
   return productData.loading ? (
-    <div>Loading Content</div>
+    <div className="spinner section">
+      <Spinner />
+    </div>
   ) : productData.error !== '' ? (
     <div>
       {' '}
